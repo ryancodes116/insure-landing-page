@@ -3,6 +3,7 @@
     <Navbar />
     <HeroSection />
     <Details />
+    <Footer />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Details from "./components/Details";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Navbar,
     HeroSection,
-    Details
+    Details,
+    Footer
   }
 };
 </script>
@@ -32,10 +35,20 @@ h1,
 h2,
 h3 {
   font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: none;
+}
+
+ul li a {
+  text-decoration: none;
 }
 
 #app {
