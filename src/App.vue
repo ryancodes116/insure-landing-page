@@ -2,18 +2,21 @@
   <div id="app">
     <Navbar />
     <HeroSection />
+    <Details />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import Details from "./components/Details";
 
 export default {
   name: "App",
   components: {
     Navbar,
-    HeroSection
+    HeroSection,
+    Details
   }
 };
 </script>
@@ -45,7 +48,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 </style>

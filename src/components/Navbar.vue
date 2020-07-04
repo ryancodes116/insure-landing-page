@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="nav-content container">
-      <img src="../assets/images/logo.svg" alt="Insure logo" />
+      <img src="../assets/images/logo.svg" alt="Insure logo" class="logo" />
       <img src="../assets/images/icon-hamburger.svg" alt="menu" class="menu-icon" />
     </div>
   </div>
@@ -22,6 +22,12 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.logo {
+  height: 70%;
+  width: 35%;
+  margin: auto 0;
 }
 
 .menu-icon {
