@@ -47,6 +47,7 @@ export default {
 }
 
 .card-text {
+  color: hsl(273, 4%, 51%);
   line-height: 1.8;
 }
 </style>
