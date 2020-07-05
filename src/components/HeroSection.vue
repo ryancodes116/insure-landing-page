@@ -17,6 +17,7 @@
       <img src="../assets/images/bg-pattern-intro-right-mobile.svg" class="pattern-right-mobile" />
       <img src="../assets/images/bg-pattern-intro-right-desktop.svg" class="pattern-right-desktop" />
       <div class="container">
+        <hr class="line" />
         <h1 class="title">Humanizing your insurance.</h1>
         <p
           class="text"
@@ -50,6 +51,10 @@ export default {};
   background-color: hsl(256, 26%, 20%);
   padding: 6rem 0 5rem;
   color: #fff;
+}
+
+.line {
+  display: none;
 }
 
 .pattern-left-desktop,
@@ -119,6 +124,15 @@ export default {};
     text-align: left;
   }
 
+  .line {
+    display: block;
+    position: absolute;
+    top: 12%;
+    left: 7.5%;
+    width: 10%;
+    color: #fff;
+  }
+
   .title {
     width: 35%;
     font-size: 3.5rem;
@@ -140,8 +154,9 @@ export default {};
   }
 
   .pattern-left-desktop {
-    bottom: -25rem;
+    bottom: -15rem;
     left: 0;
+    width: 10%;
   }
 
   .pattern-right-desktop {

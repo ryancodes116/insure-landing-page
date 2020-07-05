@@ -12,7 +12,6 @@
       src="../assets/images/icon-people-first.svg"
       class="card-image"
     />
-
     <h2 class="card-title">{{ detail.title }}</h2>
     <p class="card-text">{{ detail.text }}</p>
   </div>
@@ -49,5 +48,18 @@ export default {
 .card-text {
   color: hsl(273, 4%, 51%);
   line-height: 1.8;
+}
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .card {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+
+  .card:last-of-type {
+    margin-right: 0;
+  }
 }
 </style>

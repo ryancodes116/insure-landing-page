@@ -2,8 +2,11 @@
   <div class="details">
     <div class="details-content container">
       <hr class="line" />
-      <h1 class="title">We're Different</h1>
-      <DetailCard v-for="detail in allDetails" :key="detail.id" :detail="detail" />
+      <h1 class="title">We're different</h1>
+      <div class="cards">
+        <DetailCard v-for="detail in allDetails" :key="detail.id" :detail="detail" />
+      </div>
+
       <CallToAction />
     </div>
   </div>
@@ -40,5 +43,27 @@ export default {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 5rem;
+}
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .details {
+    text-align: left;
+  }
+
+  .line {
+    margin: 0 0 2.5rem;
+    width: 10%;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 </style>
