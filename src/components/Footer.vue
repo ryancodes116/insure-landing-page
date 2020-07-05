@@ -126,7 +126,7 @@ export default {
 }
 
 .links {
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .links:last-of-type {

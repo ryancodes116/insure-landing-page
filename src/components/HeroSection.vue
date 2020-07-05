@@ -1,7 +1,6 @@
 <template>
   <div class="hero-wrapper">
     <img src="../assets/images/image-intro-desktop.jpg" alt="family holding hands" />
-
     <div class="hero-text">
       <img src="../assets/images/bg-pattern-intro-left-desktop.svg" class="pattern-left" />
       <img src="../assets/images/bg-pattern-intro-right-desktop.svg" class="pattern-right" />
