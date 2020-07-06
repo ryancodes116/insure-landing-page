@@ -1,6 +1,7 @@
 <template>
   <footer class="footer">
-    <img src="../assets/images/bg-pattern-footer-mobile.svg" class="pattern" />
+    <img src="../assets/images/bg-pattern-footer-mobile.svg" class="pattern-mobile" />
+    <img src="../assets/images/bg-pattern-footer-desktop.svg" class="pattern-desktop" />
     <div class="footer-content container">
       <div class="footer-top">
         <img src="../assets/images/logo.svg" alt="Insure logo" class="logo" />
@@ -102,10 +103,14 @@ export default {
   text-align: center;
 }
 
-.pattern {
+.pattern-mobile {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.pattern-desktop {
+  display: none;
 }
 
 .footer-top {
@@ -152,9 +157,50 @@ export default {
   margin-bottom: 1rem;
 }
 
+.list-item:last-of-type {
+  margin-bottom: 0;
+}
+
 .link {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
+}
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .pattern-mobile {
+    display: none;
+  }
+
+  .pattern-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .links {
+    margin-bottom: 0;
+    margin-right: 13rem;
+    text-align: left;
+  }
+
+  .links:last-of-type {
+    margin-right: 0;
+  }
 }
 </style>
